@@ -16,7 +16,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="./toasttr.css">
+  <link rel="stylesheet" href="./toasttr.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="./script.js"></script>
   <link rel="stylesheet" href="./CV.css">
@@ -106,8 +106,6 @@
 
   </div>
 
- 
-  
   <div id="skills">
     <h2>Kĩ năng</h2>
     <div class="col-md-6 col-xs-12">
@@ -136,27 +134,89 @@
   <div id="proj">
     <h2 class="title">Dự án</h2>
     <div class="col-md-4">
-      <a href="https://github.com/" target="_blank">
-        <img src="./image/1.jpg" alt="">
-      </a>
+      <img src="./image/1.jpg" alt="" data-toggle="modal" data-target="#myModal">
       <p>Dự án 1</p>
     </div>
     <div class="col-md-4">
-      <a href="https://github.com/" target="_blank">
-        <img src="./image/3.jpg" alt="">
-      </a>
+      <img src="./image/3.jpg" alt="" data-toggle="modal" data-target="#myModal1">
       <p>Dự án 2</p>
     </div>
     <div class="col-md-4">
-      <a href="https://github.com/" target="_blank">
-        <img src="./image/2.jpg" alt="">
-      </a>
+      <img src="./image/2.jpg" alt="" data-toggle="modal" data-target="#myModal2">
       <p>Dự án 3</p>
     </div>
     <p>Tham khảo thêm tại:</p>
     <a href="https://github.com/">Github.com</a>
   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="padding-top: 50px;">
+    <div class="modal-dialog">
 
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Dự án 1</h4>
+        </div>
+        <div class="modal-body">
+          <img src="./image/1.jpg" alt="" style="height: 100%; width: 100%;">
+          <p style="text-align: center; margin-top: 10px;">
+            <a href="https://github.com/">Source code</a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Modal 1-->
+  <div class="modal fade" id="myModal1" role="dialog" style="padding-top: 50px;">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Dự án 2</h4>
+        </div>
+        <div class="modal-body">
+          <img src="./image/3.jpg" alt="" style="height: 100%; width: 100%;">
+          <p style="text-align: center; margin-top: 10px;">
+            <a href="https://github.com/">Source code</a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Modal 2-->
+  <div class="modal fade" id="myModal2" role="dialog" style="padding-top: 50px;">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Dự án 3</h4>
+        </div>
+        <div class="modal-body">
+          <img src="./image/2.jpg" alt="" style="height: 100%; width: 100%;">
+          <p style="text-align: center; margin-top: 10px;">
+            <a href="https://github.com/">Source code</a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <div id="contact" class="container-fluid">
 
     <h2 class="title" style="margin-bottom: 100px">Liên hệ</h2>
